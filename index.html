@@ -75,6 +75,8 @@
       margin: auto;
     }
 
+    /* Glass */
+
     .glass {
       background: var(--glass);
       border: 1px solid var(--glass-border);
@@ -84,6 +86,8 @@
       backdrop-filter: blur(22px);
       -webkit-backdrop-filter: blur(22px);
     }
+
+    /* Navbar */
 
     nav {
       position: sticky;
@@ -131,6 +135,8 @@
       color: white;
       background: rgba(146, 5, 242, 0.18);
     }
+
+    /* Hero */
 
     .hero {
       min-height: 78vh;
@@ -230,6 +236,8 @@
       transform: translateY(-3px);
     }
 
+    /* Cards */
+
     section {
       padding: 55px 0;
     }
@@ -295,6 +303,8 @@
       font-size: 0.95rem;
     }
 
+    /* About */
+
     .about {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -311,47 +321,7 @@
       line-height: 1.8;
     }
 
-    /* Video Post */
-    .video-post {
-      padding: 32px;
-      border-radius: 24px;
-    }
-
-    .video-post h3 {
-      margin-bottom: 10px;
-      font-size: 1.5rem;
-    }
-
-    .video-post p {
-      color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 22px;
-    }
-
-    .video-frame {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      border-radius: 18px;
-      background: #000;
-      margin-bottom: 22px;
-    }
-
-    .video-frame iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .video-thumbnail {
-      display: block;
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto 22px;
-      border-radius: 18px;
-      border: 1px solid var(--glass-border);
-    }
+    /* Footer */
 
     footer {
       margin-top: 70px;
@@ -365,6 +335,8 @@
     footer span {
       color: var(--primary-light);
     }
+
+    /* Mobile */
 
     @media (max-width: 760px) {
       .container {
@@ -391,8 +363,7 @@
       }
 
       .card,
-      .about-box,
-      .video-post {
+      .about-box {
         padding: 24px;
       }
     }
@@ -422,7 +393,6 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#features">Features</a></li>
-      <li><a href="#posts">Posts</a></li>
     </ul>
   </div>
 </nav>
@@ -484,44 +454,6 @@
           and a dark purple atmosphere — designed to feel modern
           without becoming complicated.
         </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="posts">
-    <div class="section-title">
-      <small>Latest Post</small>
-      <h2>Watch on YouTube</h2>
-    </div>
-
-    <div class="video-post glass">
-      <h3>Latest ReiZyuki Video</h3>
-      <p>Watch the video directly here or open it on YouTube.</p>
-
-      <div class="video-frame">
-        <iframe
-          src="https://www.youtube.com/embed/eDcLqMp7idQ"
-          title="ReiZyuki YouTube Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <a href="https://youtu.be/eDcLqMp7idQ?si=8nXN2GouHP3TPhfE" target="_blank" rel="noopener noreferrer">
-        <img
-          class="video-thumbnail"
-          src="https://img.youtube.com/vi/eDcLqMp7idQ/hqdefault.jpg"
-          alt="ReiZyuki YouTube video thumbnail">
-      </a>
-
-      <div class="actions">
-        <a
-          href="https://youtu.be/eDcLqMp7idQ?si=8nXN2GouHP3TPhfE"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary">
-          Watch on YouTube
-        </a>
       </div>
     </div>
   </section>
